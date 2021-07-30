@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="JS/jquery-3.5.1.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("#div1").show();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide" >Hide</button>
+<button id="show" >show</button>
+<div id="div1" style="width:230px;height:230px;display:none;background-image: url('Images/item1.jpg')"> </div>
+
+</body>
+</html>

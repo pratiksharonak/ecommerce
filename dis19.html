@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+function sale()
+{
+p1=prompt("enter first product price");
+p2=prompt("enter second product price");
+p3=prompt("enter third product price");
+total_price=+p1 + +p2 + +p3;
+document.write("total price is "+total_price);
+if(total_price>2000)
+{
+dis=0.08*total_price;
+dis_price=total_price-dis;
+document.write("your have to pay only"+dis_price);
+}
+else
+	if(total_price>=1000&&total_price<2000)
+{
+dis=0.04*total_price;
+dis_price=total_price-dis;
+document.write("your have to pay only"+dis_price);
+}
+else
+	if(total_price>=500&&total_price<1000)
+{
+dis=0.02*total_price;
+dis_price=total_price-dis;
+document.write("your have to pay only"+dis_price);
+}
+}
+</script>	
+</head>
+<body>
+
+<p> operators </p>
+<p>aaaa</p>
+<input type="submit" name="button" value="click" onclick="sale()">
+
+</body>
+</html>

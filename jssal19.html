@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+function salary()
+{
+sal=prompt("enter your basic salary");
+if (sal>=25000)
+ {
+ 	ta=(sal*0.1);
+ 	document.write("ta is"+ta);
+ 	da=(sal*0.1);
+ 	document.write("da is"+da);
+ 	hra=1000;
+ 	document.write("hra is 1000");
+ 	net=+ta + +da + +hra + +sal;
+	document.write("your net salary is" +net);
+ }
+ else
+ 	if (sal>=15000&&sal<25000)
+ {
+ 	ta=(sal*0.05);
+ 	document.write("ta is"+ta);
+ 	da=(sal*0.05);
+ 	document.write("da is"+da);
+ 	hra=500;
+ 	document.write("hra is 500");
+ 	net=+ta + +da + +hra + +sal;
+	document.write("your net salary is" +net);
+ }
+ else
+ 	if (sal>=5000&&sal<15000)
+ {
+ 	ta=(sal*0.03);
+ 	document.write("ta is"+ta);
+ 	da=(sal*0.03);
+ 	document.write("da is"+da);
+ 	hra=300;
+ 	document.write("hra is 300");
+ 	net=+ta + +da + +hra + +sal;
+	document.write("your net salary is" +net);
+ }
+}
+</script>	
+</head>
+<body>
+
+<p> operators </p>
+<p>aaaa</p>
+<input type="submit" name="button" value="click" onclick="salary()">
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .abc
+  {
+  color:#ccc;
+  }
+  .xyz
+  {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .float-left-area  {
+      width: 95%;
+      float: left;
+      }
+
+.float-right-area {
+      width: 5%;
+      float: left;
+      }
+
+.inner-left   {
+      padding: 5px 5px 5px 5px;
+      margin-right: 10px;
+      border: #999999 1px solid;
+      min-height: 60px;
+      }
+
+.inner-right    {
+      font-size: 11px;
+      padding: 5px 0px 5px 0px;
+      border: #999999 1px solid;
+      min-height: 60px;
+      }
+
+.clear-floated    { clear: both; height: 1px; font-size: 1px; line-height: 1px; padding: 0; margin: 0; }
+
+  </style>
+
+<body>
+  <div class="float-left-area">
+<div class="inner-left">
+
+<div class="container-fluid">
+  <div class="row xyz" style="background-color: #171717; color: white;text-align:left;padding-bottom: 10px;padding-top: 10px;">
+    <div class="col-sm-2">
+            <a href="#" class="abc"><strong>Credit Cards</strong></a><br>
+            <a href="#" class="abc">Lifestyle</a><br>
+            <a href="#" class="abc">Reward</a><br>
+            <a href="#" class="abc">Shopping</a><br>
+            <a href="#" class="abc">Travel & Fuel</a><br>
+            <a href="#" class="abc">Banking Partnership</a><br>
+            <a href="#" class="abc">Business</a><br>
+            <a href="#" class="abc">Digitized Membership Kit</a><br>
+        </div>
+        <div class="col-sm-2">
+          <a href="#" class="abc"><strong>Benefits</strong></a><br>
+          <a href="#" class="abc">Lower Interest Option</a><br>
+          <a href="#" class="abc">Encash</a><br>
+          <a href="#" class="abc">Money Simplified</a><br>
+          <a href="#" class="abc">Utility Bill Payment</a><br>
+          <a href="#" class="abc">Easy Access Channels</a><br>
+          <a href="#" class="abc">Insurance</a><br>
+          <a href="#" class="abc">Other Benefits</a><br>
+        </div>  
+        <div class="col-sm-2"> 
+          <a href="#" class="abc"><strong>Pay</strong></a><br>
+          <a href="#" class="abc">Pay Online</a><br>
+          <a href="#" class="abc">Pay Offline</a><br>
+          <a href="#" class="abc">Useful Links</a><br>
+        </div>
+        <div class="col-sm-2">
+          <a href="#" class="abc"><strong>Offers</strong></a><br>
+          <a href="#" class="abc">All offers</a><br>
+          <a href="#" class="abc">Offers this week</a><br>
+          <a href="#" class="abc">convert to EMI</a><br>
+          <a href="#" class="abc">Visa Offers on SBI Card</a><br>
+        </div>
+        <div class="col-sm-2">
+            <a href="#" class="abc"><strong>Rewards</strong></a><br>
+            <a href="#" class="abc">Know your Reward Points</a><br>
+            <a href="#" class="abc">Earning Reward Points</a><br>
+            <a href="#" class="abc">Redeeming Reward Points</a><br>
+        </div>
+        <div class="col-sm-2">
+            <a href="#" class="abc"><strong>Apply</strong></a><br>
+            <a href="#" class="abc">Help me find a card</a><br>
+            <a href="#" class="abc">Track my Application</a><br>
+            <a href="#" class="abc">Retrieve my Application</a><br>
+        </div>
+      </div>
+    </div>
+
+</div>
+</div>
+
+<div class="float-right-area">
+<div class="inner-right">
+<div class="sticky-links show">
+  <ul class="sticky-quick-links quick-links">
+    <li>
+      <a href="#" target="_blank">
+        <span class="icon money"></span>
+<small> Pay Now </small>
+</a>
+</li>
+<li>
+      <a href="#" target="_blank">
+        <span class="icon money"></span>
+<small> Report lost card </small>
+</a>
+</li>
+</div>
+</div>
+
+<div class="clear-floated"></div>
+
+<nav class="navbar navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>    
+        </button>
+      <img src="Images/SBI_card_logo.png" style="width:50px;height:50px">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Credit Cards<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="#">Lifestyles</a></li>
+              <li><a href="#">Rewards</a></li>
+              <li><a href="#">Shopping</a></li>
+          </ul>
+        </li>      
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Benefits<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="#">Lower interest option</a></li>
+              <li><a href="#">Encash</a></li>
+              <li><a href="#">Money simplified</a></li>
+              <li><a href="#">Utility bill payment</a></li>
+              <li><a href="#">Easy access channels </a></li>
+          </ul>
+        </li> 
+        <li class="active"><a href="#">Pay</a></li>
+        <li class="active"><a href="#">Offers</a></li>
+        <li class="active"><a href="#">Rewards</a></li>
+        <li button type="button" class="btn btn-info btn-xs" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" class="active"><a href="#">Apply</a></li>
+      </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <div class="form-inline">
+            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="search">
+      </div>
+    </form>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+   
+</body>

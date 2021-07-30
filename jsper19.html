@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script>
+function percentage()
+{
+p=prompt("enter physics marks");
+c=prompt("enter chemistry marks");
+m=prompt("enter maths marks");
+h=prompt("enter hindi marks");
+e=prompt("enter english marks");
+total=+p + +c + +m + +h + +e;
+document.write("total marks are "+total);
+per=(total/500)*100;
+document.write("your percentage is "+per);
+if(total>500)
+{
+document.write("you entered wrong marks");	
+}
+else
+	if(per>=60&&per<=100)
+	{
+		document.write("your division is I");
+	}	
+else
+	if(per>=45&&per<60)
+	{
+		document.write("your division is II");
+	}
+else
+	if(per>=36&&per<45)
+	{
+		document.write("your division is III");
+	}
+else
+{
+document.write("sorry you failed")
+}
+}
+</script>	
+</head>
+<body>
+
+<p> operators </p>
+<p>aaaa</p>
+<input type="submit" name="button" value="click" onclick="percentage()">
+
+</body>
+</html>

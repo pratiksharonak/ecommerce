@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parnika Creations</title>
+<script>
+
+function validateForm()
+{
+
+	var x = document.forms ["regform"]["name"].value;
+	if(x=="")
+	{
+		alert("Please enter the name in alphabets");
+		return false;
+	}
+	var x = document.forms ["regform"]["address"].value;
+	if(x=="")
+	{
+		alert("Please enter the address");
+		return false;
+	}
+	var x = document.forms ["regform"]["contact"].value;
+	if(x=="" || isNaN(x))
+	{
+		alert("Please enter the contact no in digits only");
+		return false;
+	}
+	var x = document.forms ["regform"]["email"].value;
+	var atpos = x.indexOf("@");
+	var dotpos = x.lastIndexOf(".");
+	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+	{
+		alert("Please enter valid email address");
+		return false;
+	}
+}
+</script>
+</head>
+<body>
+<form method="post" action="" name="regform" onsubmit="return validateForm()">
+
+<table border="1" width="1350" align="center"> 
+		<tr>
+			<td colspan="4" align="center"> <font color="Red" size="15" >Parnika Creations </font></td>
+
+		</tr>
+</table>
+<table border="1" width="1350" align="center">
+	<tr>
+		<td width="337"><h1 align="center"> Enquiry Form </h1>
+			Name* <input type="text" name="name" value=""><br>
+			Address*<input type="textarea" name="address" value=""><br>
+			contact number*<input type="text" name="contact" value="" ><br>
+			email<input type="text" name="email" value="" ><br>
+			password<input type="password" name="password" value="" ><br>
+			Required Meeting type*:
+			online<input type="radio" name="meeting type" value="online" <br>
+			offline <input type="radio" name="meeting type" value="offine" <br>
+			Meeting Purpose*:
+			<ul> 
+				<li> Import items <input type="checkbox" name="purpose" </li><br>
+			<li>Export items <input type="checkbox" name="purpose" </li><br>
+			<li>Retailing <input type="checkbox" name="purpose" </li> 
+		</ul>
+			<input type="submit" name="button" value="save"><br>
+			<p> * marked fields are mandatory <br> </p> 
+		</td>
+</table>
+</form>
+</body>
+</html>
