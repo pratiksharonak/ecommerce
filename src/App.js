@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Navbar from './Components/Navbar';
+import { BrowserRouter } from 'react-router-dom';
+import RouteComponent from './Components/RouteComponent';
 
 function App() {
+  const [cartData, setCartData] = useState([]);
+  const addToCart = (product) => {
+    let productExist = false; 
+    let newCartData = cartData.map((cart)=>{
+      if(cart.id==product.id){
+       productExist = true;
+        return {
+          ...cart,
+          qty:cart.qty+1
+        }
+      }
+      return cart;
+    });
+    if(!productExist) newCartData.push(product);
+    console.log(newCartData);
+    setCartData(newCartData);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Navbar cartCount={cartData.length}/>
+      
+      <div className='container'>
+        <div className='row'>
+          <RouteComponent cartData={cartData} addToCart={addToCart}/>
+        </div>
+      </div>
+          
+    
+    </BrowserRouter>
+    );
 }
 
 export default App;
